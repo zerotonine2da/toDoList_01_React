@@ -1,0 +1,84 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+.inputList {
+    background-color: #77af9c;
+    color: #d7fff1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 1200px;
+    min-width: 800px;
+}
+
+.working-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.working-style .working-todo {
+    display: flex;
+    flex-wrap: wrap; /* 가능한 영역 내에서 벗어나지 않고 여러행으로 나누어짐*/
+    flex-direction: row;
+    height: 200px;
+}
+
+.toDoComponent-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #77af9c;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.toDoComponent-style .workingBtn {
+    display: flex;
+    gap: 20px;
+}
+
+/*버튼*/
+.btnAdd {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #77af9c;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 600;
+    color: #77af9c;
+}
+
+.toDoComponent-style .workingBtn .deletBtn {
+    /*삭제하기 버튼*/
+    display: flex;
+    gap: 20px;
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 600;
+    color: red;
+}
+
+.toDoComponent-style .workingBtn .changeBtn {
+    /*완료/취소 버튼*/
+    display: flex;
+    gap: 20px;
+    border: 1px solid #77af9c;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 600;
+    color: #77af9c;
+}
