@@ -13,8 +13,10 @@
 
 .layout {
     display: flex;
+    justify-content: center;
+
     flex-direction: column;
-    margin: 10px;
+    margin: auto;
     max-width: 1200px;
     min-width: 800px;
 }
@@ -30,7 +32,7 @@
     display: flex;
     flex-wrap: wrap; /* 가능한 영역 내에서 벗어나지 않고 여러행으로 나누어짐*/
     flex-direction: row;
-    height: 200px;
+    height: auto;
 }
 
 .toDoComponent-style {

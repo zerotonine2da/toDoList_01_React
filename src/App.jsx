@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Newtodo from './components/Newtodo';
 import Donetodo from './components/Donetodo';
+import Button from './components/Button';
 
 function App() {
     const initialState = [{ id: 1, title: '해야할 일', content: '리액트 개인과제', isDone: false }];
@@ -86,9 +87,9 @@ function App() {
             <div className="inputList">
                 제목 <input value={title} onChange={titleHandler}></input>
                 내용 <input value={content} onChange={contentHandler}></input>
-                <button className="btnAdd" onClick={BtnAddClick}>
+                <Button className="btnAdd" onClick={BtnAddClick}>
                     추가하기
-                </button>
+                </Button>
             </div>
             <div className="working-style">
                 <h2>Working..</h2>
@@ -110,7 +111,7 @@ function App() {
             </div>
             <div className="working-style">
                 <h2>Done..!</h2>
-                <div clasName="working-todo">
+                <div className="working-todo">
                     {toDo
                         .filter((item) => item.isDone === true)
                         .map(function (item) {
